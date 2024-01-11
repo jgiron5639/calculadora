@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #calculator {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+  }
+
+  input {
+    grid-column: span 4;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .numbers {
+    grid-column: span 3;
+  }
+
+  .operators {
+    grid-column: span 1;
+  }
